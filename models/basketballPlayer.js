@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 // Create a schema
-const basketballPlayerSchema = new.mongoose.Schema({
+const basketballPlayerSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        require: true,
+        unique: true
     },
     team: {
         type: String,
